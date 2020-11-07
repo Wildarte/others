@@ -1,0 +1,25 @@
+body{
+    padding-bottom: 0;
+}
+
+header{
+    font-family: 'Bowlby One SC', cursive;
+}
+/* .body-corpo conteúdo do site */
+
+section{
+    margin-top: 80px;
+}
+.color-item-menu{
+    color: #fff;
+    margin-left: 10px;
+}
+.color-item-menu:hover{
+    border-radius: 5px;
+    background-color: #bbb;
+}
+.my-footer{
+    margin-top: 20px;
+    padding-top: 20px;
+    background-color:#f5f5f0;
+}

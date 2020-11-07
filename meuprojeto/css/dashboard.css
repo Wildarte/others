@@ -1,0 +1,10 @@
+
+ 
+ #pages section header{
+   font-size: 24pt;
+   margin-bottom: 1em;
+ }
+ 
+ .page{display: none;}
+ .hide { display: none;}
+ .active{ background: red !important; }

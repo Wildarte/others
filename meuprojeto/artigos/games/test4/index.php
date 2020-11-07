@@ -1,0 +1,12 @@
+<?php include '../../../header.html'; ?>
+        <section style='margin-top: 80px; margin-bottom: 80px;' class='container'>
+        <div class='row'>
+
+            <!-- O word-wrap coloca quebra de linha no texto dentro da div -->
+
+            <div class='col-12 offset-md-2 col-md-8' style='word-wrap: break-word'>
+        <h1 style="color: rgb(33, 37, 41); font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, &quot;Noto Sans&quot;, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;; text-align: center;"><span style="font-weight: bolder;">Title</span></h1><h3 style="color: rgb(33, 37, 41); font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, &quot;Noto Sans&quot;, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;; text-align: justify;">Conteúdo sobre o game Assassin's Creed é um jogo muito interessante e muito jogado Conteúdo sobre o game Assassin's Creed é um jogo muito interessante e muito jogado Conteúdo sobre o game Assassin's Creed é um jogo muito interessante e muito jogado Conteúdo sobre o game Assassin's Creed é um jogo muito interessante e muito jogado Conteúdo sobre o game Assassin's Creed é um jogo muito interessante e muito jogado Conteúdo sobre o game Assassin's Creed é um jogo muito interessante e muito jogado Conteúdo sobre o game Assassin's Creed é um jogo muito interessante e muito jogado.</h3><p style="color: rgb(33, 37, 41); font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, &quot;Noto Sans&quot;, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;; text-align: justify;"><br></p><p style="color: rgb(33, 37, 41); font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, &quot;Noto Sans&quot;, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;; text-align: justify;"><img src="https://upload.wikimedia.org/wikipedia/pt/a/a0/Assassin%27s_Creed_film_poster.jpg" style="width: 336px;"><br></p>
+              </div>
+            </div>
+          </section>
+        <?php include '../../../footer.html'; ?>

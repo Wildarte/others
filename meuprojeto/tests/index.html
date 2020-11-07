@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="outr">
+        <ul id="menu">
+            <li><a data-page="historia" href="#"><h3> História </h3> </a></li>
+            <li><a data-page="requisitos" href="#"><h3> Requisitos </h3> </a></li> 
+            <li><a data-page="prints" href="#"><h3> Screenshots </h3> </a></li>
+        </ul>
+    </div>
+    
+
+    <div class="mai">
+
+        <div id="pages">
+            <!-- Início seção história-->
+            <section id="historia" class="page" data-page="historia">
+                    <header> História </header>
+                    <p> se passando duzentos anos depois dos eventos de Oblivion. 
+                        Na premissa de Skyrim, o Império começa a ceder territórios
+                        para as nações Élficas uma vez governadas, porque não há 
+                        nenhum herdeiro para o trono do Imperador. Os Blades não tem 
+                        ninguém para defender, e gradualmente morreram, foram assassinados 
+                        ou se isolaram do resto do mundo. Depois do assassinato do Rei de 
+                        Skyrim, uma guerra civil irrompe entre as raças nativas Nord — sendo 
+                        a maioria aqueles que desejavam que Skyrim se separe do Império, 
+                        e o resto sendo aqueles que desejam que Skyrim permaneça no Império.
+                    </p>
+              </section>
+              <!-- Fim seção história-->
+        
+              <!-- Início seção Requisitos--> 
+              <section id="requisitos" class="page" data-page="requisitos">
+                    <header> Requisitos </header>
+                    
+                    <p> MÍNIMOS:</p>
+                    <p>SO: Windows 7/8.1/10 (64-bit Version)</p>
+                    <p>Processador: Core i5-750/AMD Phenom II X4-945</p>
+                    <p>Memória: 8 GB de RAM</p>
+                    <p>Placa de vídeo: NVIDIA GTX 470 1GB /AMD HD 7870 2GB</p>
+                    <p>Armazenamento: 12 GB de espaço disponível</p>
+    
+                    <br/>
+    
+                    <p>RECOMENDADOS:</p>
+                    <p>SO: Windows 7/8.1/10 (64-bit Version)</p>
+                    <p>Processador: Core i5-2400/AMD FX-8320</p>
+                    <p> Memória: 8 GB de RAM</p>
+                    <p> Placa de vídeo: NVIDIA GTX 780 3GB /AMD R9 290 4GB</p>
+                    <p>Armazenamento: 12 GB de espaço disponível</p>
+              </section>
+              <!-- Fim seção requisitos-->
+             
+              <!-- Início seção printscreens-->
+              <section id="prints" class="page" data-page="prints">
+                    <header> Printscreens </header>
+                    <img src="http://mmosgame.com/downloads/The-Elder-Scrolls-V-Skyrim2.jpg"/>
+                <img src="http://mmosgame.com/downloads/The-Elder-Scrolls-V-Skyrim3.jpg"/>
+             </section> 
+             <!-- FIM seção história-->
+        </div>
+    </div>
+    
+
+    <script>
+        //Quando o documento estiver pronto
+$(document).ready(function() {
+   
+   //Função que mostra o conteúdo de acordo com o botão clicado
+   $("#menu li a").on('click', function(e) {
+       e.preventDefault();
+       var page = $(this).data('page');
+       $("#pages .page:not('.hide')").stop().fadeOut('fast', function() {
+           $(this).addClass('hide');
+           $('#pages .page[data-page="'+page+'"]').fadeIn('slow').removeClass('hide');
+       });
+   });
+   
+   //Função que insere a classe Active no botão que foi clicado
+   $("#menu li").on('click', function(){
+        $(this).siblings().removeClass('active');
+        $(this).addClass('active');
+   });
+});
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,1 @@
+<?php include '/header.html'; ?><p>eded</p><?php include 'footer.html'; ?>

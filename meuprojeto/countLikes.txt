@@ -1,0 +1,67 @@
+//esse código seria usado para computar as curtidas nos artigos para por enquanto nao irei usar
+
+<?php
+$servername = 'localhost';
+        $username = 'root';
+        $password = 'Oliver.1992*';
+        $myDB = 'myTest';
+    
+        $conn = new mysqli($servername, $username, $password, $myDB);
+    
+        if($conn->connect_error){
+            die('Erro ao conectar');
+        }
+    
+        $select = "SELECT * FROM artigos WHERE nome_artigo= '$dir'";
+        $result = $conn->query($select);
+
+        if($_REQUEST['REQUEST_METHOD'] == "POST"){
+            
+            if($result->num_rows > 0){
+    
+                while($row = $result->fetch_assoc()){
+                    $novoValor = $row['curtidas'] + 1;
+                    $update = "UPDATE artigos SET curtidas=$novoValor";
+                    $conn->query($update);
+                }
+            }
+        }
+    
+        if($result->num_rows > 0){
+    
+            while($row = $result->fetch_assoc()){
+
+
+?>
+
+    <p> <?php if($row['curtidas'] == 0){
+         echo "Seja o primeiro a curtir";
+        }else{
+            echo "Se gostou, dixe seu like ";
+        }
+        ?>
+
+        <form action="<?php htmlspecialchars($_SERVER['PHP_SELF']) ?>" method="POST">
+            <button type='submit' class='btn btn-outline-success'>
+        </form>
+        <img src='/meuprojeto/imagens/resources/thumb-up-1_icon-icons.com_69846.ico' alt=''>
+            <?php
+            
+            if($row['curtidas'] > 0){ ?>
+                <span class='badge badge-success badge-pill'>
+                   <?php echo $row['curtidas']; ?>
+                </span> <?php
+            }
+               
+            ?>
+            
+        </button>
+        
+    </p>
+
+<?php
+    
+        }
+    }
+
+?>

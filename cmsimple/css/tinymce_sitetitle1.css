@@ -1,0 +1,17 @@
+/* page headings from toc */
+h1._level1_page_,
+h1._level2_page_,
+h1._level3_page_,
+h1._level4_page_,
+h1._level5_page_,
+h1._level6_page_ {
+	font-family: arial, sans-serif; 
+	background: #eee;
+	color: #222; 
+	font-size: 15px; 
+	line-height: 1.3em; 
+	font-weight: 700; 
+	font-style: normal; 
+	padding: 4px 0 6px 0; 
+	margin: 0 0 16px 0;
+}
